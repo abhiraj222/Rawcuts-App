@@ -1,0 +1,38 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:rawcuts_production/Screens/welcome_screen.dart';
+import 'package:rawcuts_production/constants/colors.dart';
+
+import 'Auth/login_screen.dart';
+import 'mainscreen.dart';
+
+class SplashScreen extends StatefulWidget {
+  static const String id = 'splash-screen';
+  @override
+  _SplashScreenState createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.white,
+      body: AnimatedSplashScreen(
+        duration: 10,
+        splash: Center(
+          child: Container(
+            child: Image.asset(
+              'assets/images/splash.png',
+            ),
+          ),
+        ),
+        nextScreen: FirebaseAuth.instance.currentUser == null
+            ? WelcomeScreen()
+            : MainScreen(),
+        splashIconSize: 150,
+      ),
+    );
+  }
+}

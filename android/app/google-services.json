@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "19359342246",
+    "project_id": "rawcutsdb",
+    "storage_bucket": "rawcutsdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19359342246:android:b017f30edcf2ebdc44de67",
+        "android_client_info": {
+          "package_name": "com.example.rawcuts_production"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19359342246-k33g7cr18cgvqrcn6rllpk3srm24tft9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rawcuts_production",
+            "certificate_hash": "2f09af10ef6d9fb715ec84b9f884c61ba2696ef7"
+          }
+        },
+        {
+          "client_id": "19359342246-736uluf3db6i16alfssqhnjdq8ru37ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9rzbLMsUgSr0EDDdvKPrwvcYEj-16gGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19359342246-736uluf3db6i16alfssqhnjdq8ru37ro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
